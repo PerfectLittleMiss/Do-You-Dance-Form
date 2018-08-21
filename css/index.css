@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+html,
+body {
+  background-color: #7A0FFF;
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  min-width: 300px; }
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 6px solid rgba(29, 11, 125, 0.86);
+  background-color: rgba(217, 255, 255, 0.8); }
+
+#img {
+  width: 20%;
+  height: auto; }
+
+header {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px; }
+
+#form-outer {
+  background-color: rgba(160, 255, 255, 0.75);
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px; }
+
+.tlabels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px; }
+
+.trightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle; }
+
+.labels {
+  display: block;
+  text-align: center;
+  width: 80%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.rightTab {
+  display: block;
+  text-align: center;
+  width: 70%;
+  vertical-align: middle;
+  margin: 0 auto; }
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  background-color: rgba(217, 255, 255, 0.7); }
+
+#userAge {
+  width: 40px; }
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+  background-color: rgba(217, 255, 255, 0.7); }
+
+#submit {
+  background-color: #001BA6;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid; }
+
+#submit:hover {
+  background-color: #2409B2;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 42px;
+  width: 98px;
+  margin: 10px;
+  border: 0px solid; }
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  background-color: rgba(217, 255, 255, 0.7); }
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px; }
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%; }
+
+  select {
+    width: 90%; } }
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: center;
+    display: inline-block; }
+
+  .rightTab {
+    width: 90%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .tlabels {
+    width: 100%;
+    text-align: left; }
+
+  .trightTab {
+    width: 80%;
+    float: left; }
+
+  .input-field {
+    width: 100%; }
+
+  select {
+    width: 100%; } }
+
+/*# sourceMappingURL=index.css.map */
