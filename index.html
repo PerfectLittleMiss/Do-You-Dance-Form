@@ -3,6 +3,7 @@
 <head>
   <title>Do You Dance?</title>
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <h1 id="title">Do You Dance?</h1>
@@ -41,10 +42,14 @@
           <label for="regular">Do you dance on a regular basis?</label>
         </div>
         <div class="rightTab">
-          <ul style="list-style: none;">
-            <li class="radio" style="display: inline;"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="regular" ></label></li>
-            <li class="radio" style="display: inline;"><label>No<input name="radio-buttons" value="2"  type="radio" class="regular" ></label></li>
-          </ul>
+          <div class="radioBtn">
+            <label for="radio-buttons">Yes</label>
+            <input name="radio-buttons" value="1"  type="radio" class="regular" >
+          </div>
+          <div class="radioBtn second">
+            <label for="radio-buttons">No</label>
+            <input name="radio-buttons" value="2"  type="radio" class="regular" >
+          </div>
         </div>
       </div>
       <div class="rowTab">

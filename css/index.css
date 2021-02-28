@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 html,
 body {
-  background-color: #7A0FFF;
+  background-color: #188FAD;
   text-align: center;
   font-family: 'Raleway', Helvetica, sans-serif;
   min-width: 300px; }
@@ -9,15 +9,22 @@ body {
 h1 {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
   padding: 10px;
   border-radius: 5px;
-  border: 6px solid rgba(29, 11, 125, 0.86);
+  border: 3px solid rgba(41, 18, 168, 0.86);
   background-color: rgba(217, 255, 255, 0.8); }
+
+#description {
+  text-align: center; }
+
+.rowTab {
+  margin-left: auto;
+  margin-right: auto; }
 
 #img {
   width: 20%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 10px; }
 
 header {
   font-size: 2em;
@@ -25,7 +32,7 @@ header {
   margin: 20px; }
 
 #form-outer {
-  background-color: rgba(160, 255, 255, 0.75);
+  background-color: rgba(217, 255, 255, 0.8);
   margin: 0 auto;
   border-radius: 4px;
   width: 90%;
@@ -34,17 +41,11 @@ header {
   padding-top: 20px; }
 
 .tlabels {
-  display: inline-block;
-  text-align: right;
-  width: 40%;
   padding: 5px;
   vertical-align: top;
   margin-top: 10px; }
 
 .trightTab {
-  display: inline-block;
-  text-align: left;
-  width: 48%;
   vertical-align: middle; }
 
 .labels {
@@ -52,21 +53,18 @@ header {
   text-align: center;
   width: 80%;
   padding: 5px;
-  vertical-align: top;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto; }
 
 .rightTab {
-  display: block;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  width: 70%;
-  vertical-align: middle;
   margin: 0 auto; }
 
 .input-field {
   height: 20px;
-  width: 280px;
   padding: 5px;
   margin: 10px;
   border: 1px solid #c0c0c0;
@@ -104,7 +102,6 @@ input[type="checkbox"] {
 
 .dropdown {
   height: 35px;
-  width: 140px;
   padding: 5px;
   margin: 10px;
   margin-top: 15px;
@@ -114,41 +111,127 @@ input[type="checkbox"] {
 
 .radio, .checkbox {
   position: relative;
-  left: -43px;
   margin-left: 10px;
   display: block;
   padding-bottom: 10px; }
 
-@media screen and (max-width: 833px) {
-  .input-field {
+.second {
+  margin-left: 20px; }
+
+@media (min-width: 520px) {
+  h1 {
+    width: 60%;
+    font-size: 24px; }
+
+  #img {
+    width: 30%; }
+
+  .tlabels {
+    width: 30%;
+    display: inline-block;
+    text-align: right; }
+
+  .trightTab {
+    display: inline-block;
+    text-align: left;
+    width: 60%; }
+    .trightTab .input-field {
+      width: 60%; }
+
+  .radio, .checkbox {
+    left: -43px; }
+
+  .rightTab {
+    width: 70%;
+    padding: 10px; }
+    .rightTab .radioBtn {
+      margin-top: 10px;
+      display: inline-block; }
+
+  .dropdown {
+    width: 60%; }
+
+  input[type="radio"] {
+    width: 2em;
+    height: 18px;
+    vertical-align: middle; }
+
+  #types {
+    width: 50%; } }
+@media (max-width: 519px) {
+  h1 {
+    width: 80%;
+    font-size: 18px; }
+
+  #img {
+    width: 40%; }
+
+  .trightTab .input-field {
+    width: 90%;
+    margin-top: 0px; }
+
+  input[type="radio"] {
+    width: 2em;
+    height: 32px;
+    vertical-align: middle; }
+
+  input[type="checkbox"] {
+    width: 1.5em;
+    height: 20px;
+    vertical-align: middle; }
+
+  #dropdown {
     width: 80%; }
 
-  select {
-    width: 90%; } }
+  .radio, .checkbox {
+    width: 100%; }
+
+  .rightTab {
+    padding: 10px; }
+    .rightTab .radioBtn {
+      display: inline-block; }
+    .rightTab label {
+      vertical-align: middle; }
+
+  #types {
+    width: 90%;
+    padding: 0px; } }
+/*
 @media screen and (max-width: 520px) {
+
+  h1 {
+    width: 80%;
+  }
+
   .labels {
     width: 100%;
     text-align: center;
-    display: inline-block; }
-
+    display: inline-block;
+  }
   .rightTab {
     width: 90%;
+    //float: left;
     display: inline-block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+  }
 
   .tlabels {
     width: 100%;
-    text-align: left; }
-
+    text-align: left;
+  }
   .trightTab {
     width: 80%;
-    float: left; }
+    float: left;
+  }
 
   .input-field {
-    width: 100%; }
-
+    width: 100%;
+  }
   select {
-    width: 100%; } }
+    width: 100%;
+  }
+}
+*/
 
 /*# sourceMappingURL=index.css.map */
